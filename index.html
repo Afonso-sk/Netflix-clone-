@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+     <!--jquery Owl css para construção de carousel,mas do javascript vamos colocae me baixo-->
+     <link rel="stylesheet" href="css/owl/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+     <!-- Aplicar responsividade do meu site Responsividade do meu site-->
+     <link rel="stylesheet" href="css/responsivo.css">
+
+
+    <title>Clone do netflix</title>
+</head>
+<body>
+    <!--CABEÇALHO-->
+    <header>
+        <div class="container_1">
+            <div class="logo">
+                <img src="image/logo-netflix.png" width="150" alt="logo">
+            </div>
+         
+            <nav class="menu"><!--Criar menu de naavegaçãoMenu de navegação-->
+                <a href="">Inicio</a>
+                <a href="">Series</a>
+                <a href="">Filmes</a>
+                <a href="">Novidades mais vistas</a>
+                <a href="">A minha lista</a>
+            </nav>
+        </div>
+    
+    </header>
+    <main> <!--define o nosso conteúdo principal, destaque-->
+        <div class="filme_principal"> <!--Capa do filme principal-->
+            <div class="container_2">
+                <h3 class="titulo">AMOR A DISTÂNCIA</h3>
+                <p class="descricao">Este filme fala de um casal que se conheceu no facebook em 2015, mas em 2016, surgiu alguns imprevistos que fez com que o 
+                    casal deixasse de falar,mas por milagre da vida o amor falou mais alto, e eles voltaram a falar em 2019... 
+                    assista o filme para entender melhor.
+                <div class="botoes">
+                    <button onclick="window.open('https://www.youtube.com/watch?v=4mo_ORNGqq0');" role="button" class="btn">
+                        <i class="fas fa-play"></i><!--icone play do fnt awosome -->
+                        ASSISTIR AGORA
+                    </button>
+                    <button onclick="window.open('https://www.themoviedb.org/tv/79460-legacies');" role="button" class="btn">
+                        <i class="fas fa-info-circle"></i> <!--icone inf do fnt awosome -->
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+                   
+            </div>
+           
+        </div>
+    </main>
+       <!--esse código ´padrão baixamos no owl demo html e colocamos as nossas imagens -->
+    <div class="carousel-filmes"> 
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="image/image2.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image4.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image3.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/mini1.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image3.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image4.jpg">    
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/mini2.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/mini3.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-filmes">
+        <h3>Novos lançamentos</h3> 
+               <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="image/image6.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image5.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image4.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image3.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image2.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/image1.jpg">    
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/mini2.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="image/mini3.jpg">
+            </div>
+        </div>
+    </div>
+    <!--Fontwose para usar os icones-->
+    <script src="https://kit.fontawesome.com/2c65488e5f.js" crossorigin="anonymous"></script>
+    <!--Jquery carousel para o site em js-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <!--Chamar o arquivo setup do js para poder aparecer o caousel-->
+    <script src="js/owl/setup.js"></script>
+        
+</body>
+</html>

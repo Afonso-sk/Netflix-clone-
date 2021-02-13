@@ -1,0 +1,123 @@
+/*Declaração de variaveis para guardar alguma coisa cores da nossa pagina */
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*Restet css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Fundo do nosso site, usando a variavel declarada*/
+body{
+    background-color:var(--preta);
+    font-family: 'Aria', Times, serif;
+    color: white;/*se formos a ver não editei a cor no class h3,mas sim 
+    no body,mas ele reconhece
+    */
+}
+/*Borda  no rectangulo menu e logo
+ .container{
+    border: 1px solid black;
+}
+*/
+.container_1{
+    display: flex;/*colocar tudo na mesma linha*/
+    flex-direction: row;
+    align-items: center;/*alinhamento do menu*/
+    justify-content: space-between;/*desgrudar o menu do logo*/
+}
+
+/*Formatação do logo*/
+ .logo{
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+/*Tirar lina do menu e formatar*/
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right:10px;
+    
+    
+
+}
+/*Cor do menu qdo passar o mouse*/
+header nav a:hover{
+    color:#E50914;
+
+}
+/*Filme principal*/
+.filme_principal{
+    font-size: 16px;
+    /*Aplicar opacidade, transparencia na capa*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.30)100%),url('/image/capa-principal.jpg');
+    height: 400px;
+    background-size: cover;/*para especicar tamanho da imagem*/
+    display: flex; /*joga os elementos em linha ou coluna*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;/*para que elementos comecem sempre da esquerda*/
+    
+
+
+}
+ /*Formatação de botões*/
+.filme_principal .descricao{
+    margin-bottom: 40px
+    
+}
+.titulo{
+    margin-top:30 %;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif
+    margin-bottom: 30px
+   
+    
+}     /*Formatação botão*/
+    .btn{
+        background-color: rgba(0,0,0,.50);
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        margin-right: 15px;
+         cursor: pointer;
+         transition: 3s ease all;
+         font-size: 12px;
+        
+    }/*efeitos do botão*/
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    .btn i{
+        margin-right: 8px;/*espaçamento do botão com icone*/
+    }
+   
+    .container_2{
+        margin-left: 20px;
+        text-align: justify;
+        
+
+    }
+    .filme_principal .container_2{
+        width:70% ; /*ocupação do texto  na nossa tela*/
+
+    }
+    
+    /*Para configurar tamanho das imagens do carousel*/
+    .box-filmes{
+        height: 100%;
+        width: 100%;
+        display:block ;
+        cursor: pointer;
+   
+    }
+    .carousel-filmes{
+        margin-top: px;
+    }
