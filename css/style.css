@@ -56,7 +56,8 @@ header nav a:hover{
 .filme_principal{
     font-size: 16px;
     /*Aplicar opacidade, transparencia na capa*/
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.30)100%),url('/image/capa-principal.jpg');
+    
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.30)100%),url('../image/capa-principal.jpg');
     height: 400px;
     background-size: cover;/*para especicar tamanho da imagem*/
     display: flex; /*joga os elementos em linha ou coluna*/
@@ -107,6 +108,10 @@ header nav a:hover{
     }
     .filme_principal .container_2{
         width:70% ; /*ocupação do texto  na nossa tela*/
+
+    }
+	.filme_principal .container_2 h3{
+        padding-bottom:12px;
 
     }
     
